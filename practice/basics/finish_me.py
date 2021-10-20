@@ -17,10 +17,11 @@ def names_to_strings(names, surnames):
 
 def last_first(s):
     """
-    Поменять в строке s первую и последнюю букву местами. Вернуть результат.
-    Гарантируется, что длина строки не меньше двух символов.
+    Поменять в строке s первую и последнюю букву местами.
     last_first('Hello') -> 'oellH'
     """
+    if len(s) < 2:
+        return Ellipsis
     return Ellipsis + s[1:Ellipsis] + s[0]
 
 
@@ -28,7 +29,7 @@ def int_strings(a):
     """
     На вход подан список, хранящий некоторое количество целых чисел, при этом часть из них записаны как строки.
     Нужно вернуть список, в котором числа int станут строками, а записанные в виде строки - станут int.
-    int_strings(1, '2', 3, '4') -> ['1', 2, '3', 4]
+    int_strings([1, '2', 3, '4']) -> ['1', 2, '3', 4]
     """
     def change_item(x):
         return str(x) if isinstance(Ellipsis) else Ellipsis
@@ -39,6 +40,7 @@ def int_strings(a):
 def no_long_words(s):
     """
     Дана строка из слов, разделённых пробелами. Нужно удалить слова длиннее 5 символов.
+    Лишние пробелы после удаления слов тоже нужно убрать.
     no_long_words('Hello beautiful world') -> 'Hello world'
     """
     words = s.split(' ')
