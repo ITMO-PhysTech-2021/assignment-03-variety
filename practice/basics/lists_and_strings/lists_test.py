@@ -43,7 +43,7 @@ sum_list_test_data = [
 @pytest.mark.parametrize('data', sum_list_test_data)
 def test_sum_list(data):
     # noinspection PyArgumentList
-    assert lists.sum_list(*data[0]) == data[1]
+    assert lists.sum_list(data[0]) == data[1]
 
 
 signs_test_data = [
