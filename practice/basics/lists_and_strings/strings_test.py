@@ -74,7 +74,8 @@ parentheses_test_data = [
     ('((()))', True),
     ('()()()', True),
     ('(what (is) this?)', True),
-    ('(what (is) this?', True),
+    ('(what (is) this?', False),
+    (')(', False)
 ]
 
 
