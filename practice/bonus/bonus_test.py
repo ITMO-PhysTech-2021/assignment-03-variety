@@ -1,5 +1,5 @@
 import pytest
-import transform
+import bonus
 
 
 transform_test_data = [
@@ -20,4 +20,4 @@ transform_test_data = [
 @pytest.mark.parametrize('data', transform_test_data)
 def test_transform(data):
     # noinspection PyArgumentList
-    assert transform.transform(*data[0]) == data[1]
+    assert bonus.transform(*data[0]) == data[1]
