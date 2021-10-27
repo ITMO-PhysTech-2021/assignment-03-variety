@@ -21,14 +21,14 @@
 
 Примеры:
 
->`begin_str = "hit", end_str = "cog", str_list = ["hot","dot","dog","lot","log","cog"]`
+>`begin_str = "hit", end_str = "cog", str_list = ["hot", "dot", "dog", "lot", "log", "cog"]`
 >
 >**Ответ:** 5
 >
 >**Пояснение:** самая короткая возможная цепочка
 > `"hit" -> "hot" -> "dot" -> "dog" -> "cog"` состоит из 5 слов
 
->`begin_str = "hit", end_str = "cog", str_list = ["hot","dot","dog","lot","log"]`
+>`begin_str = "hit", end_str = "cog", str_list = ["hot", "dot", "dog", "lot", "log"]`
 >
 > **Ответ:** 0
 >
