@@ -1,3 +1,5 @@
+import math
+
 """
 Это sandbox, так называемая "песочница"
 
@@ -9,7 +11,11 @@
 На самом деле это можно сделать, даже не выполняя задание module (см. пример ниже), если прописать полный путь
 """
 
-from homework.module.module import do_something_stupid
+from k1.n1.test import test
+from k1.n1.m2.file import fun
+
+test()
+fun()
 
 """
 Краткий список удобных команд (в основном на Windows):
@@ -28,4 +34,14 @@ from homework.module.module import do_something_stupid
 - Shift + Enter      - перейти на следующую строку, не разбив текущую
 """
 
-do_something_stupid()  # Вызов функции
+# _do_nothing()  # Вызов функции
+
+
+def do_something(a):
+    for i in range(len(a) - 1):
+        if a[i] == a[i + 1]:
+            return False
+    return True
+
+
+do_something([1, 2, 3])

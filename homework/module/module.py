@@ -1,6 +1,16 @@
-def do_nothing():
-    pass
+from __future__ import annotations
+# from homework.module.module_test import do_another_fail
 
 
 def do_something_stupid():
-    do_nothing()
+    pass
+
+
+def do_fail(value: None | int = None):
+    if value is None:
+        raise NotImplementedError()
+    do_another_fail()
+
+
+def do_nothing():
+    return 'nothing'
