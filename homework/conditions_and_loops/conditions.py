@@ -17,7 +17,7 @@ def get_or_none(a, index):
     get_or_none([1, 2, 3], 2) -> 2
     get_or_none([1, 2], 2)    -> None
     """
-    if ...:
+    if ... <= ... < ...:
         return a[index]
     return None
 
@@ -29,7 +29,7 @@ def is_power_of_two(x):
     is_power_of_two(0) -> False
     """
     s = bin(x)
-    return ...
+    return ... and ...
 
 
 def is_monotonic(a, b, c):
@@ -44,7 +44,7 @@ def is_monotonic(a, b, c):
 
 def inline_if(a, b, condition):
     """
-    Вернуть a, если condition == True, и b иначе. Тело функции должно занимать одну строку
+    Вернуть a, если condition == True, и b иначе.
     inline_if(1, 2, False) -> 2
     """
     return ...
